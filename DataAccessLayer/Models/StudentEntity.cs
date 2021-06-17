@@ -13,5 +13,6 @@ namespace DataAccessLayer.Models
         public string Gender { get; set; }
         public string Email { get; set; }
         public bool IsActive { get; set; }
+        public int EventId { get; set; }
     }
 }

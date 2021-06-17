@@ -8,7 +8,7 @@ namespace DataAccessLayer.Constants
 {
     public class DBConstants
     {
-        public const string ConnectionString = "Data Source = . ;Initial Catalog = SchoolManagement ; Integrate Security = true;";
+        public const string ConnectionString = "Data Source=. ;Initial Catalog=SchoolManagement;Integrated Security = true;";
 
     }
 }

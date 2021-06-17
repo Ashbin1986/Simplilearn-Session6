@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DomainServices.Services
 {
-    interface IStudentDomainService
+    public interface IStudentDomainService
     {
         void AddStudent(StudentModel  studentModel);
 

@@ -12,5 +12,8 @@ namespace DataAccessLayer.Repositories
         void AddEvent(EventsEntity eventsEntity);
 
         void DeleteEvent(int  eventId);
+
+        List<EventsEntity> GetEvents();
+        
     }
 }

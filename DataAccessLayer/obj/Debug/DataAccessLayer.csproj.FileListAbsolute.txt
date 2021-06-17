@@ -5,7 +5,6 @@ C:\Users\ashbi\source\repos\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 C:\Users\ashbi\source\repos\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
 C:\Users\ashbi\source\repos\Ashbin1986\Simplilearn-Session6\DataAccessLayer\bin\Debug\DataAccessLayer.dll
 C:\Users\ashbi\source\repos\Ashbin1986\Simplilearn-Session6\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
-C:\Users\ashbi\source\repos\Ashbin1986\Simplilearn-Session6\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
 C:\Users\ashbi\source\repos\Ashbin1986\Simplilearn-Session6\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
 C:\Users\ashbi\source\repos\Ashbin1986\Simplilearn-Session6\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 C:\Users\ashbi\source\repos\Ashbin1986\Simplilearn-Session6\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

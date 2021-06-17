@@ -21,5 +21,27 @@ namespace DataAccessLayer.Repositories
             DBHelperLayer dBHelper = new DBHelperLayer();
             dBHelper.DeleteEvent(eventId);
         }
+
+        public List<EventsEntity> GetEvents()
+        {
+            DBHelperLayer dBHelper = new DBHelperLayer();
+
+            List<EventsEntity> eventsEntities = new List<EventsEntity>();
+
+            var events = dBHelper.GetEvents();
+
+            for (int i = 0; i < events.Tables["EventsData"].Rows.Count; i++)
+            {
+                eventsEntities.Add(new EventsEntity
+                {
+
+                    EventName = events.Tables["EventsData"].Rows[i]["EventName"].ToString(),
+                    EventId = Convert.ToInt32(events.Tables["EventsData"].Rows[i]["EventId"].ToString())
+
+                });
+            }
+            return eventsEntities;
+
+        }
     }
 }

@@ -34,7 +34,28 @@ namespace DataAccessLayer.DBHelper
                 sqlCommand = new SqlCommand("dbo.DeleteEvent", sqlConnection);
                 sqlCommand.CommandType = CommandType.StoredProcedure;
                 sqlCommand.Parameters.AddWithValue("@eventId", eventId);
+                sqlConnection.Open();
                 sqlCommand.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                sqlConnection.Close();
+            }
+        }
+
+        public DataSet GetEvents()
+        {
+            try
+            {
+                dataAdapter = new SqlDataAdapter("GetEvents", sqlConnection);
+                dataAdapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+                dataSet = new DataSet();
+                dataAdapter.Fill(dataSet, "EventsData");
+                return dataSet;
             }
             catch (Exception ex)
             {
@@ -55,6 +76,10 @@ namespace DataAccessLayer.DBHelper
                 sqlCommand.Parameters.AddWithValue("@StudentName", studentEntity.StudentName);
                 sqlCommand.Parameters.AddWithValue("@Gender", studentEntity.Gender);
                 sqlCommand.Parameters.AddWithValue("@IsActive", studentEntity.IsActive);
+                sqlCommand.Parameters.AddWithValue("@Email", studentEntity.Email);
+                sqlCommand.Parameters.AddWithValue("@EventId", studentEntity.EventId);
+
+                sqlConnection.Open();
                 int result = sqlCommand.ExecuteNonQuery();
                 // SQL Command  -- ExecuteNonQuery- DML
                 // SQL Command  -- ExecuteReader- Fetching data from DB

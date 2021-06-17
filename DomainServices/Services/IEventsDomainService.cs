@@ -12,5 +12,7 @@ namespace DomainServices.Services
         void AddEvent(EventsModel eventsModel);
 
         void DeleteEvent(int eventId);
+
+        List<EventsModel> GetEvents(int eventId);
     }
 }

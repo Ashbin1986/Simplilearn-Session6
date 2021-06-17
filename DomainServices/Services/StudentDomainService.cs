@@ -20,7 +20,8 @@ namespace DomainServices.Services
                 Email = studentModel.Email,
                 Gender = studentModel.Gender,
                 IsActive = studentModel.IsActive,
-                StudentName = studentModel.StudentName
+                StudentName = studentModel.StudentName,
+                EventId = studentModel.EventId
             });
         }
 
@@ -34,7 +35,7 @@ namespace DomainServices.Services
 
             if (result != null && result.Tables.Count > 0)
             {
-                for (int i = 0; i <= result.Tables[0].Rows.Count; i++)
+                for (int i = 0; i < result.Tables[0].Rows.Count; i++)
                 {
                     StudentEventsModel studentEventsModel = new StudentEventsModel();
                     studentEventsModel.EventDate = Convert.ToDateTime(result.Tables[0].Rows[i]["EventDate"].ToString());
