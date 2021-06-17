@@ -156,6 +156,7 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="SMS.SQL" />
     <Content Include="StudentEvents.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
